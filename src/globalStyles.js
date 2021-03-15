@@ -1,7 +1,6 @@
 import styled, {createGlobalStyle} from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
-
+ export const GlobalStyle = createGlobalStyle`
 *{
     box-sizing:border-box;
     padding:0;
@@ -17,6 +16,7 @@ margin-right:auto;
 margin-left:auto;
 padding-right:50px;
 padding-left:50px;
+border: 1px solid red;
 
 @media screen and (max-width:990px){
     padding-left:30px;
