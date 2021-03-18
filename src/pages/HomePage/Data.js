@@ -10,7 +10,7 @@ export const homeObjOne = {
         'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: require('../../images/logo.png'),
+    img: require('../../images/makeUp.svg'),
     alt: 'Credit Card',
     start: ''
     };

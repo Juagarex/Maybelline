@@ -44,7 +44,7 @@ const Navbar = () => {
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">
-                    <NavIcon/>
+                    <NavIcon />
                     Maybelline
                     </NavLogo>
                     <MobileIcon onClick= {handleClick}>

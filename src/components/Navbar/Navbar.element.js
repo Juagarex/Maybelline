@@ -34,15 +34,11 @@ display: flex;
 align-items:center;
 `;
 
-/*
 export const NavIcon = styled(FaMagento)`
 margin-right:0.5rem;
-`; */
-
-export const NavIcon = styled.div`
-background-image:url('/../assets/logo-png');
-
 `;
+
+
 
 export const  MobileIcon = styled.div`
 display:none;
