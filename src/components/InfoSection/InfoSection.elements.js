@@ -3,7 +3,10 @@ import styled from 'styled-components'
 export const InfoSec = styled.div`
 color:#fff;
 padding: 160px;
-background:${({ligthBg}) => (ligthBg ? '#fff' : '#101522')};
+background:${({lightBg}) => (lightBg ? '#fff' : '#101522')};
+@media screen and (max-width:450px){
+  padding:50px
+}
 `;
 
 
@@ -42,7 +45,7 @@ padding-bottom: 60px;
 export const ImgWrapper = styled.div`
   max-width: 555px;
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  justify-content: ${({start}) => (start ? 'flex-start' : 'flex-end')};
 `;
 
 export const TopLine = styled.div`

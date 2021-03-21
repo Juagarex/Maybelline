@@ -1,5 +1,5 @@
 export const homeObjOne = {
-    primary: true,
+    primary: false,
     lightBg: false,
     lightTopLine: true,
     lightText: true,
@@ -9,8 +9,27 @@ export const homeObjOne = {
     description:
         'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
     buttonLabel: 'Get Started',
-    imgStart: '',
-    img: require('../../images/makeUp.svg'),
+    imgStart: 'start',
+    img: require('../../images/makeUp.svg').default, /*segunda manera de traer la imagen*/
     alt: 'Credit Card',
-    start: ''
+    start: 'true'
     };
+
+
+
+    export const homeObjTwo = {
+        primary: false,
+        lightBg: true,
+        lightText: false,
+        lightTextDesc: false,
+        lightTopLine: false,
+        topLine: 'Marketing Agency',
+        headline: 'Lead Generation Specialist for Online Businesses',
+        description:
+            'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+        buttonLabel: 'Get Started',
+        imgStart:'start',
+        img: require('../../images/heroImage.jpg').default,
+        alt: 'Credit Card',
+        start:'true'
+        };

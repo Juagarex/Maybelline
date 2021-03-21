@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {FaMagento} from 'react-icons/fa'
+import logopage from '../../images/logo.png'
 import {Link} from 'react-router-dom'
 import {Container} from '../../globalStyles'
 
@@ -20,7 +20,6 @@ display:flex;
 justify-content:space-between;
 background-color:#6ebd6e;
 display:flex;
-width:50%
 ${Container}
 `;
 
@@ -34,9 +33,20 @@ display: flex;
 align-items:center;
 `;
 
-export const NavIcon = styled(FaMagento)`
-margin-right:0.5rem;
-`;
+
+
+export  const NavIcon=styled.div`
+display:block;
+align-items:center;
+width:50px;
+height:50px;
+background-image:url(${logopage});
+background-size: contain;
+background-repeat:no-repeat;
+object-fit:cover;
+margin-top:10px;
+margin-right:10px
+`
 
 
 
