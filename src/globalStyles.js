@@ -1,10 +1,27 @@
 import styled, {createGlobalStyle} from 'styled-components'
+import PrimaryFont from './Fonts/sriracha.ttf';
+import SecondaryFont from './Fonts/Comic.ttf';
+import Melanie from './Fonts/Melanie.ttf'
 
- export const GlobalStyle = createGlobalStyle`
+
+export const GlobalStyle = createGlobalStyle`
 *{
     box-sizing:border-box;
     padding:0;
     margin:0;
+    
+    @font-face {
+        font-family: 'Sriracha';
+        src: url(${PrimaryFont})
+    }
+    @font-face {
+        font-family:'Comic Boy';
+        src: url(${SecondaryFont})
+    }
+    @font-face {
+        font-family:'Melanie';
+        src: url(${Melanie})
+    }
 }
 `;
 

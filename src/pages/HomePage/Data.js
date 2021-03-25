@@ -33,3 +33,9 @@ export const homeObjOne = {
         alt: 'Credit Card',
         start:'true'
         };
+
+        export const heroHome ={
+            Hero: require('../../images/heroImage.jpg').default,
+            alt:'Hero image on Home',
+            banner: 'The best sexy lips'
+        };

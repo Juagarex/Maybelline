@@ -4,22 +4,29 @@ import {Link} from 'react-router-dom'
 import {Container} from '../../globalStyles'
 
 
+
+
 export const Nav = styled.nav`
-background-color:#6ebd6e;
-height: 55px;
-display: flex;
+font-family:'Sriracha';
+width:100%;
+height: 75px;
+display: inline-flex;
 justify-content: center;
 align-items: center;
 font-weight:1.2rem;
-top:0;
+top:-8px;
 z-index:999;
+position:absolute;
 `;
 
 export const NavbarContainer = styled(Container)`
 display:flex;
 justify-content:space-between;
-background-color:#6ebd6e;
 display:flex;
+@media screen and (max-width:415px){
+background:#101522;
+
+}
 ${Container}
 `;
 
@@ -45,13 +52,15 @@ background-size: contain;
 background-repeat:no-repeat;
 object-fit:cover;
 margin-top:10px;
-margin-right:10px
+margin-right:10px;
+color:red;
 `
 
 
 
 export const  MobileIcon = styled.div`
 display:none;
+color:red;
 
 @media screen and (max-width: 960px ){
 display:block;
@@ -66,6 +75,8 @@ cursor:pointer;
 
 export const NavMenu = styled.ul`
 display:flex;
+position:relative;
+top:0;
 align-items:center;
 list-style:none;
 text-align: center;
@@ -76,9 +87,9 @@ text-align: center;
     width:100%;
     height:90vh;
     position:absolute;
-    top:55px;
+    top:65px;
     left: ${({click}) => (click ? 0 : '-100%')};
-    opacity:1;
+    opacity:0.8;
     transition:all 0.5s ease;
     background:#101522;
 }
@@ -100,13 +111,16 @@ border-bottom: 2px solid transparent;
 `
 
 export const NavLinks =styled(Link)`
-color:#fff;
+font-size:28px;
+font-weight:400;
+color:#3F0808;
 display:flex;
 align-items:center;
 text-decoration: none;
 padding:0.5rem 1rem;
 height:100%;
 @media screen and (max-width:960px){
+    color:#fff;
     text-align:center;
     padding:3rem;
     width:100%;

@@ -40,18 +40,18 @@ const Navbar = () => {
 
     return (
         <>
-        <IconContext.Provider value={{color:'#fff'}}>
+        <IconContext.Provider value={{color:'blue'}}>
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">
                     <NavIcon />
                     Maybelline
-                    </NavLogo>
-                    <MobileIcon onClick= {handleClick}>
+                </NavLogo>
+                <MobileIcon onClick= {handleClick}>
                     {click ? <FaTimes/> :
                     <FaBars/>}
-                    </MobileIcon>
-                    <NavMenu onClick = {handleClick} click={click}>
+                </MobileIcon>
+                <NavMenu onClick = {handleClick} click={click}>
                         <NavItem>
                         <NavLinks to='/'>
                             INICIO
@@ -67,18 +67,7 @@ const Navbar = () => {
                             CONTACTANOS
                         </NavLinks>
                         </NavItem>
-                        {button ? (
-                            <NavBtnLink to="/sing-up">
-                                <Button primary>SIGN UP</Button>
-                            </NavBtnLink>
-                        ) : (
-                        <NavBtnLink to="/sing-up">
-                            <Button fontBig primary>
-                                Sing UP
-                            </Button>
-                        </NavBtnLink>
-                        )}
-                    </NavMenu>
+                </NavMenu>
             </NavbarContainer>
         </Nav>
         </IconContext.Provider>
