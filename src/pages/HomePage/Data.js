@@ -39,3 +39,8 @@ export const homeObjOne = {
             alt:'Hero image on Home',
             banner: 'The best sexy lips'
         };
+        export const FooterData = {
+            face: require('../../images/Facebook.svg').default,
+            instagram:require('../../images/instagram.svg').default,
+            twitter:require('../../images/Twitter.svg').default
+        };

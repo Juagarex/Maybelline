@@ -27,7 +27,6 @@ font-weight:400
 export const HeroImage =styled.div`
 width:100%;
 height:100%;
-
 background-image:url(${heroHome.Hero});
 background-size:cover;
 background-repeat: no-repeat;

@@ -3,11 +3,16 @@ import {
     FooterContainer,
     FooterMenu,
     FooterItem,
-    FooterLink
+    FooterLink,
+    FooterIcon
     }
 from './Footer.elements'
 
-export const Footer = () => {
+export const Footer = ({
+    face,
+    instagram,
+    twitter
+}) => {
     return (
         <>
             <FooterContainer>
@@ -28,19 +33,11 @@ export const Footer = () => {
                         </FooterLink>
                     </FooterItem>
                 </FooterMenu>
+                {/* menu de iconos */}
                 <FooterMenu>
-                    <FooterItem>
-                        icono de face
-                    </FooterItem>
-                    
-                    <FooterItem>
-                        icono de Insta
-                    </FooterItem>
-
-                    
-                    <FooterItem>
-                        icono de twitter
-                    </FooterItem>
+                        <FooterIcon DataImage={face}/>
+                        <FooterIcon DataImage={instagram}/>
+                        <FooterIcon DataImage={twitter}/>
                 </FooterMenu>
             </FooterContainer>
         </>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { heroHome } from '../../pages/HomePage/Data'
 import {
     HeroContainer,
     HeroImage,

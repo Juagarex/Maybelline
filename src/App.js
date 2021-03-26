@@ -4,6 +4,7 @@ import Home from './pages/HomePage/Home'
 import { Navbar} from  './components';
 import {Footer} from './components/Footer/Footer'
 import {GlobalStyle} from './globalStyles'
+import {FooterData} from './pages/HomePage/Data'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
-      <Footer/>
+      <Footer {...FooterData}/>
     </Router>
   );
 }
